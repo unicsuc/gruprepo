@@ -1,0 +1,256 @@
+﻿[1.2.2] - 2018-09-11
+- Small roll back of the movie change from 1.1.26, as some movies use a different format and therefore throw an error.
+
+[1.2.1] - 2018-09-10
+- Fixes Kitsu.
+
+[1.2.0] - 2018-09-08
+- Kitsu Library integration!!! SwagOtaku is a bigger MVP than James Harden.
+- I noticed that the autoplay changes from 1.1.21 are kind of bugged (MP4Upload is fucking garbage) so for now I'm disabling them.
+
+[1.1.28] - 2018-09-08
+- I was made aware that some movies have more than one episode, so it now does it by episode count.
+
+[1.1.27] - 2018-09-06
+- The movie change broke favorites, this fixes it, I'm losing my patience with favorites, as soon as Kitsu is implemented I'm seriously considering just deleting them.
+
+[1.1.26] - 2018-09-05
+- I noticed that the addon xml had the term "animes" in it, this made me cringe, so I changed it to "anime".
+- When you click on a movie it now skips the episode select and goes straight to the player, tbh should have been this way in the first place.
+
+[1.1.25] - 2018-09-04
+- Small UI changes.
+
+[1.1.24] - 2018-09-04
+- Added a People Watching section, and added more info to Popular Today (SuzwagKururugi arigatou).
+
+[1.1.23] - 2018-09-02
+- Rolls back on previous changes, caused to many issues to stay like that.
+- Adds more detail to the Last Played on main menu, now has plot.
+
+[1.1.22] - 2018-09-01
+- Fixes an error that causes it to ask to search again when you add a favorite. 
+
+[1.1.21] - 2018-09-01
+- If a host is broken it will now ask you to choose again, or if you are using autoplay it will auto to the next host.
+- UX changes, now doesn't give "OK" notifications. Only "Notification" notifications.
+
+[1.1.20] - 2018-08-31
+- Fix for Rapidvideo after they updated and broke the resolver. When JSergio fixes this issue I will roll back to using ResolveURL for it.
+
+[1.1.19] - 2018-08-31
+- hehe... so the last update kind of broke everything... lol... so anyway I rolled back the json changes but kept the tiwi kiwi update.
+
+[1.1.18] - 2018-08-30
+- Tiwi Kiwi now works. Huge thanks to CandyFace. He is the real MVP.
+- JSON changes (LOL I'm a fucking idiot.)
+
+[1.1.17] - 2018-08-29
+- I'm an idiot and broke search I fixed it now.
+
+[1.1.16] - 2018-08-29
+- Over the past few updates I have been implementing changes that makes the add-on run quicker, it's now easier on your system, and Masterani. Anyway now search is quicker. Go nuts!
+- Added a small change that tells you when there is no results in a search.
+
+[1.1.15] - 2018-08-25
+- Changed "Popular Today". Now displays everything there is to offer. Not just 10. This used to be there but now it will not cause an api error.
+
+[1.1.14] - 2018-08-25
+- Changed a silly thing that made it spam the api.
+
+[1.1.13] - 2018-08-25
+- Miscellaneous changes
+
+[1.1.12] - 2018-08-24
+- Masterani added a new host!!! Mystream.to is now working.
+
+[1.1.11] - 2018-08-22
+- Small change to fix metadata error with movies as well as Lupin the Third (Displayed as "LupinI" in player rather than "Lupin III")
+
+[1.1.10] - 2018-08-22
+- The add-on is now fully compatible with Kodi 18 Leia for now (At least for the time being, let's hope nothing changes). Thanks to Munch (xMunchWasTaken) for this fix.
+
+[1.1.9] - 2018-08-19
+- Fixed the sources as Masterani updated how they handle links.
+
+[1.1.8] - 2018-08-16
+- Added a new tools menu that includes new troubleshooting options.
+- Moved Clear Cache to Tools.
+- Added a backup feature to Favorites within the Tools menu.
+- Added an option to clear favorites if you have issues within the Tools menu.
+- Added an option to restore favorites from a backup within the Tools menu.
+- Began work on automatic updating of a Kitsu library, doesn't work just yet, but take a look at the kitsu.py file if you want a sneak peek. When it is finished will update to 1.2.x. Which will focus on things like syncing, using services like Kitsu, Trakt and other similar things. Much like how 1.1.x focused on metadata and display options.
+
+[1.1.7] - 2018-08-14
+- Changed the screenshots to be from real anime (1. Mikakunin de Shinkoukei, 2. Toradora!, 3. Love Live! School Idol Project)
+- Fixed movie metadata so now it shows year, genre, and plot. 
+
+[1.1.6] - 2018-08-12
+- Removed Aniupload, Bakavideo and Beta hosts as they are no longer on Masterani. Thanks to Munch (xMunchWasTaken) for this information.
+
+[1.1.5] - 2018-08-11
+- Fixes the add-on for Kodi 18 Leia
+
+[1.1.4] - 2018-08-10
+- There was a massive metadata meltdown, took multiple hours to fix... thank god thats done... hopefully.
+- Dubbing this update the "Massive Metadata Update" or "MMU" for short.
+
+[1.1.3] - 2018-08-10
+- Added more metadata to further complete the player information section. May add more if I can, such as cast etc.
+- Changed all instances of "Masterani" to "Masterani Redux" for parity purposes.
+
+[1.1.2] - 2018-08-09
+- Fixed an error where shows with Unicode in the title (eg. Yu☆Gi☆Oh!) couldn't be scraped without throwing an error, you can now watch them fine.
+- Cleaned up the addon.xml file - Moved addon devs (past and present) to bottom of screen disclaimer, added a disclaimer mentioning that the addon is not "legit", and that if you wish to support the anime makers, use Crunchyroll ot another similar service.
+- Aniupload, Bakavideo, and BETA hosts now false by default, at least until I know they work.
+
+[1.1.1] - 2018-08-08
+- Changed numbering of episodes from "1. episode name" to "1 - episode name"
+
+[1.1.0] - 2018-08-06
+- Scraper now scrapes the website instead of the API.
+- Tiwi.kiwi is now disabled as it doesn't work anymore.
+- Now uses ResolveURL instead of URLResolver, and uses it much more.
+- Fixed the Aika, Drive.g and Rapidvideo sources.
+- Switched the way the show name and episode title appear in the player to the "correct" order now.
+- Major update, so updated by 0.1 rather than 0.0.1.
+
+[1.0.4] - 2018-06-21
+- Trakt authorization seems to be working now, yay! (though at this point not sure if it does anything beyond authorization)
+- as a result of the Trakt fix, some files which were a little outdated from Exodus have been updated to use the newer (but still kind of dated) ones from Covenant
+- thanks to SuzwagKururugi for adding the popular section
+
+[1.0.3] - 2018-06-20
+- fixed case where MP4Upload was not working properly
+- fixed Hosts and Playback settings
+- set some older hosts (and Tiki.kiwi, which as this point does not work at all) that may not work properly to default to off
+
+[1.0.2] - 2018-05-25
+- added episode number before title
+
+[1.0.1] - 2018-05-13
+- added line to import pyxbmct 
+
+[1.0.0] - 2018-05-03
+- Fixed MP4Upload issues
+- Added support for: Streamango, Rapidvideo, and (kinda works) Tiwi.kiwi 
+
+[0.9.8] - 2017-02-06
+- Fixed G.drive bug
+
+[0.9.7] - 2017-02-06
+- Fix bug with MP4Upload provider
+
+[0.9.6] - 2017-02-04
+- Fixed a bug where movies would not show up at all when using select dialog
+- Tried to fix a bug where progress dialog would stay open after video has started
+
+[0.9.5] - 2017-30-03
+- Added warning dialog at first run to let people know addon might or might not work with Kodi 16
+
+[0.9.4] - 2017-29-03
+- Fixed bug in Bakavideo where quality was wrong
+
+[0.9.3] - 2017-29-03
+- Added Drive.g support
+
+[0.9.2] - 2017-29-03
+- Additional fixes to Vidstreaming provider
+
+[0.9.1] - 2017-29-03
+- Changed select dialog to fetch info from site instead of local db.
+
+[0.9.0] - 2017-29-03
+- Fixed bug where Vidstream didn't select correct quality. Is still buggy sometimes
+- Added Estuary support for select dialog.
+- Added nav back action to close select dialog
+- Added support for OpenLoad provider
+
+[0.8.6] - 2016-29-10
+- Fixed a bug where anime list would fail on first try when using WiFi module instead of ethernet
+
+[0.8.5] - 2016-25-09
+- Fixed bug where new episodes would fail to load
+
+[0.8.4] - 2016-24-08
+- Updated addon to use new site API
+
+[0.8.3] - 2016-22-08
+- Added support for drive.g host
+
+[0.8.2] - 2016-18-08
+- Fixed bug where autoplay would well autoplay regardless of setting
+- Implemented autoplay options for playback selection, should now select based on quality and sub dub preference
+
+[0.8.1] - 2016-18-08
+- Fixed a bug where watched module didn't properly mark episode as watched during playback
+
+[0.8.0] - 2016-18-08
+- Cleaned up watched module
+- Added favorites option (shows can be added and removed, if any shows have been added it will show up in main menu)
+
+[0.7.5] - 2016-17-08
+- Added Browse Anime context menu option to recent list
+- Fixed a bug where anime would not correctly set watched state of playback was stopped at start of end credit
+
+[0.7.4] - 2016-17-08
+- Changed search function to use live search and not internal db search
+
+[0.7.3] - 2016-16-08
+- Removed unused parts from settings and left empty fancy stuff
+
+[0.7.2] - 2016-16-08
+- Fixed a bug where addon would not open at all
+- Added new addon fanart
+
+[0.7.1] - 2016-15-08
+- Optimized watched status a bit (Should function better now, hopefully)
+
+[0.7.0] - 2016-15-08
+- Added last visited anime to root list
+- Fixed a bug where it didn't properly mark episode as watched after watching it
+- Fixed a bug where it didn't properly refresh listview after watching episode
+
+[0.6.5] - 2016-13-08
+- Fixed a bug where episode list failed
+
+[0.6.4] - 2016-13-08
+- Added mouse interaction with select dialog
+- Did a naked rain dance
+- Added misc info to player info dialog when playing video
+
+[0.6.3] - 2016-03-08
+- Fixed a bug (hopefully) that made Anime not work on FireTV
+
+[0.6.2] - 2016-03-08
+- Added a few speed improvements and better usage of cache
+- First load of animeshow will load from MasterAni.me and cache, if show is completed it will use internal cache
+
+[0.6.1] - 2016-03-08
+- Fixed a bug where pyxbmct would not allow select dialog to open
+
+[0.6.0] - 2016-03-08
+- Added search function
+- Cleaned up the code
+- Fixed a few bugs
+
+[0.5.2] - 2016-02-08
+- Accidentally deleted important files so addon did not work !
+- Awesome me :P 
+
+[0.5.1] - 2016-02-08
+- Modified the sound of one of my farts
+- Removed unused files
+- Cleaned up a bit of code
+
+[0.5.0] - 2016-29-07
+- Added select dialog for Anime
+- Messed up a lot of code
+- Sang a song
+
+[0.2.1] - 2016-23-07
+- Updated addon to support new api structure from website
+- Added Support for Bakavideo mirror
+
+[0.2.0] - 2016-10-07
+- Added ContextMenu Mark / Unmark as watched for show and episode

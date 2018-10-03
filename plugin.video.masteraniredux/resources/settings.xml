@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="General">
+        	<setting id="anime.lastvisited" type="number" default="0" visible="false"/>
+        	<setting type="lsep" label="Trakt" />
+		<setting id="trakt.user" type="action" label="Authorization..." option="close" action="RunPlugin(plugin://plugin.video.masterani/?action=authTrakt)"/>
+		<setting id="trakt.token" type="text" option="hidden" visible="false" label="" default=""/>
+        	<setting id="trakt.refresh" type="text" option="hidden" visible="false" label="" default=""/>
+		<setting id="indicators.alt" type="enum" label="Indicators" values="Local|Trakt" default="1" visible="!eq(-3,)"/>
+	</category>
+	<category label="Episode Tracking">
+		<setting id="track.yesno" type="bool" label="Use Kitsu?" default="false"/>
+		<setting id="track.type" type="labelenum" label="Track Episodes through:" values="Kitsu" default="Kitsu"/>      
+    	</category>
+	<category label="Kitsu Login">
+		<setting type="lsep" label="Kitsu Login"/>
+        	<setting id="kitsu.email" type="text" label="Email:" default=""/>
+        	<setting id="kitsu.password" type="text" option="hidden" label="Password:" default=""/>
+		<setting id="kitsu.login" type="action" label="Click to Login..." option="close" action="RunPlugin(plugin://plugin.video.masteraniredux/?action=kitsu_login)"/>
+
+		<setting type="lsep" label="Kitsu Logout"/>
+		<setting id="kitsu.logout" type="action" label="Click to Logout..." option="close" action="RunPlugin(plugin://plugin.video.masteraniredux/?action=kitsu_logout)"/>
+	</category>
+    	<category label="Hosts">
+        	<setting id="host.mp4upload" type="bool" label="MP4Upload" default="true"/>
+        	<setting id="host.youtube" type="bool" label="Youtube" default="true"/>
+        	<setting id="host.stream.moe" type="bool" label="Stream.moe" default="true"/>
+        	<setting id="host.drive.g" type="bool" label="Drive.g" default="true"/>
+		<setting id="host.vidstreaming" type="bool" label="Vidstreaming" default="true"/>
+		<setting id="host.rapidvideo" type="bool" label="Rapidvideo" default="true"/>
+		<setting id="host.aika" type="bool" label="Aika" default="true" />
+		<setting id="host.streamango" type="bool" label="Streamango" default="true"/>
+        	<setting id="host.openload" type="bool" label="Openload" default="true"/>
+        	<setting id="host.mystream" type="bool" label="Mystream" default="true"/>	
+        	<setting id="host.tiwikiwi" type="bool" label="Tiwi.kiwi" default="true"/>	
+    	</category>
+    	<category label="Playback">
+        	<setting type="lsep" label="Autoplay" />
+        	<setting id="autoplay.enabled" label="Enable Autoplay" type="bool" default="false"/>
+        	<setting id="autoplay.maxquality" label="Max Quality" type="select" values="1080|720|480" default="1080"/>
+        	<setting id="autoplay.subdub" label="Sub | Dub" type="select" values="Sub|Dub" default="Sub"/>
+    	</category>
+</settings>

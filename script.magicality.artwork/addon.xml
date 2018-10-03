@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.magicality.artwork" version="1.0.5" name="Magicality Artwork" provider-name="Wilson Magic">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Magicality Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
