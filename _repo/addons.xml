@@ -126,6 +126,21 @@
 	</extension>
 </addon>
 
+<addon id="plugin.program.t4kwizard" name="[COLOR dodgerblue][B]T4K[/B][/COLOR] Wizard" version="0.3.0" provider-name="unicsuc">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR dodgerblue]T4K[/COLOR] Wizard</summary>
+    <description lang="en">[COLOR dodgerblue]T4K[/COLOR] Wizard allows you to get access to the latest [COLOR dodgerblue]T4K[/COLOR] Custom Builds.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.digi-online"
        name="Digi-Online"
        version="0.2.7.b"
@@ -998,7 +1013,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
 </addon>
 
-    <addon id="repository.gruprepo" name="T4K Grup Repo" version="1.0.2" provider-name="unicsuc">
+    <addon id="repository.gruprepo" name="T4K Grup Repo" version="1.0.3" provider-name="unicsuc">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
